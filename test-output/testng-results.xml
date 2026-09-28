@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-28T11:15:27 IST" name="Default suite" finished-at="2026-09-28T11:18:31 IST" duration-ms="184455">
+    <groups>
+    </groups>
+    <test started-at="2026-09-28T11:15:27 IST" name="Default test" finished-at="2026-09-28T11:18:31 IST" duration-ms="184455">
+      <class name="project.QA">
+        <test-method is-config="true" signature="setup()[pri:0, instance:project.QA@a1153bc]" started-at="2026-09-28T11:15:27 IST" name="setup" finished-at="2026-09-28T11:15:51 IST" duration-ms="23756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyDashboard()[pri:1, instance:project.QA@a1153bc]" started-at="2026-09-28T11:15:51 IST" name="verifyDashboard" finished-at="2026-09-28T11:16:04 IST" duration-ms="13653" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element found by By.xpath: //*[contains(text(),'Insight into any GitHub profile')]
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.5.2', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.57, chrome: {chromedriverVersion: 154.0.8037.57 (73c14f6228d7..., userDataDir: /var/folders/n5/frndtz2s52j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49233}, goog:processID: 1580, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49233/devtoo..., se:cdpVersion: 154.0.8037.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed9994119f739d9e7697789433d0d4d8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //*[contains(text(),'Insight into any GitHub profile')]
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.5.2', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.57, chrome: {chromedriverVersion: 154.0.8037.57 (73c14f6228d7..., userDataDir: /var/folders/n5/frndtz2s52j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49233}, goog:processID: 1580, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49233/devtoo..., se:cdpVersion: 154.0.8037.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed9994119f739d9e7697789433d0d4d8
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+at project.QA.verifyDashboard(QA.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboard -->
+        <test-method signature="searchValidGitHubUser()[pri:2, instance:project.QA@a1153bc]" started-at="2026-09-28T11:16:04 IST" name="searchValidGitHubUser" finished-at="2026-09-28T11:16:31 IST" duration-ms="26216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchValidGitHubUser -->
+        <test-method signature="searchInvalidGitHubUser()[pri:3, instance:project.QA@a1153bc]" started-at="2026-09-28T11:16:31 IST" name="searchInvalidGitHubUser" finished-at="2026-09-28T11:16:57 IST" duration-ms="25928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchInvalidGitHubUser -->
+        <test-method signature="verifyGitRating()[pri:4, instance:project.QA@a1153bc]" started-at="2026-09-28T11:16:57 IST" name="verifyGitRating" finished-at="2026-09-28T11:17:20 IST" duration-ms="23006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGitRating -->
+        <test-method signature="verifyTrending()[pri:5, instance:project.QA@a1153bc]" started-at="2026-09-28T11:17:20 IST" name="verifyTrending" finished-at="2026-09-28T11:17:28 IST" duration-ms="8172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTrending -->
+        <test-method signature="verifyCompareModule()[pri:6, instance:project.QA@a1153bc]" started-at="2026-09-28T11:17:28 IST" name="verifyCompareModule" finished-at="2026-09-28T11:17:37 IST" duration-ms="9132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCompareModule -->
+        <test-method signature="verifyLearnGit()[pri:7, instance:project.QA@a1153bc]" started-at="2026-09-28T11:17:37 IST" name="verifyLearnGit" finished-at="2026-09-28T11:17:50 IST" duration-ms="12897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLearnGit -->
+        <test-method signature="verifySettings()[pri:8, instance:project.QA@a1153bc]" started-at="2026-09-28T11:17:50 IST" name="verifySettings" finished-at="2026-09-28T11:18:23 IST" duration-ms="33661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySettings -->
+        <test-method signature="verifyLoginButton()[pri:9, instance:project.QA@a1153bc]" started-at="2026-09-28T11:18:23 IST" name="verifyLoginButton" finished-at="2026-09-28T11:18:31 IST" duration-ms="7621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:project.QA@a1153bc]" started-at="2026-09-28T11:18:31 IST" name="tearDown" finished-at="2026-09-28T11:18:31 IST" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- project.QA -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
